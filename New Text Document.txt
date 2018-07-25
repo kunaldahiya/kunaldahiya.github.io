@@ -1,0 +1,18 @@
+- Username : vilg
+-Pass : vigil123@ http://www.iith.ac.in/vilg/wp-login.php
+https://ask.fedoraproject.org/en/question/7000/how-to-set-colors-for-bash-shell-primary-prompt/
+https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+
+Server Address : group12@192.168.1.152
+Dell Server : kd@192.168.4.176 ()
+
+Local Machine Address : 192.168.128.2
+
+mkdir /path/to/your/project
+cd /path/to/your/project
+git init
+git remote add origin https://ltltlt@bitbucket.org/ltltlt/decision-tree.git
+echo "lt lt" >> contributors.txt
+git add contributors.txt
+git commit -m 'Initial commit with contributors'
+git push -u origin master
