@@ -32,7 +32,7 @@
       </p>
 
       <p>
-        Our recent work DeepXML not only provides a uniform framework to analyze and improve existing deep extreme classifiers but it also yielded a family of deep extreme classification algorithms such as Astec, DECAF, GalaXC, ECLARE, and SiameseXML. These algorithms have found applications in various real-world applications including query recommendation and ads where it is benefitting millions of users and small buisnesses.
+        Our recent work DeepXML not only provides a uniform framework to analyze and improve existing deep extreme classifiers but it also yielded a family of deep extreme classification algorithms such as Astec, DECAF, GalaXC, ECLARE, MUFIN, and SiameseXML. These algorithms have found applications in various real-world applications including query recommendation and ads where it is benefitting millions of users and small buisnesses.
       </p>
        </td>
     </tr>
@@ -58,9 +58,41 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     <tbody><tr>
-     <td width="33%" valign="top" align="center"><a href="https://www.cse.iitd.ac.in/~kunal/siamesexml_main.pdf" target="_blank"><img src="./data/siamesexml.png" alt="siamesexml" width="100%" style="border-radius:15px"></a>
+     <td width="33%" valign="top" align="center"><a href="http://manikvarma.org/pubs/mittal22.pdf" target="_blank"><img src="./data/mufin.jpeg" alt="mufin" width="100%" style="border-radius:15px"></a>
      </td><td width="67%" valign="top">
-        <p><a href="https://www.cse.iitd.ac.in/~kunal/siamesexml_main.pdf" target="_blank" id="Dahiya21b">
+        <p><a href="http://manikvarma.org/pubs/mittal22.pdf" target="_blank" id="Mittal22">
+        <heading>Multimodal extreme classification</heading></a><br>
+        Anshul Mittal, <strong> Kunal Dahiya</strong>, Shreya Malani, Janani Ramaswamy, Seba Kuruvilla, Jitendra Ajmera, Keng-hao Chang, Sumeet Agarwal, Purushottam Kar, and Manik Varma<br>
+        Computer Vision and Pattern Recognition Conference (<b>CVPR</b>), 2022<br>
+    </p>
+        <div class="paper" id="mittal22">
+        <a href="javascript:toggleblock(&#39;mittal22abs&#39;)">abstract</a> /
+        <a shape="rect" href="javascript:togglebib(&#39;mittal22&#39;)" class="togglebib">bibtex</a> /
+        <a href="http://manikvarma.org/pubs/mittal22.pdf" target="_blank">pdf</a> /
+        <a href="https://github.com/Extreme-classification/MUFIN" target="_blank">code</a>
+        <p align="justify"> <i id="mittal22abs" style="display: none;">This paper develops the MUFIN technique for extreme classification (XC) tasks with millions of labels where data-points and labels are endowed with visual and textual descriptors. Applications of MUFIN to product-to-product recommendation and bid query prediction over several millions of products are presented. Contemporary multi-modal methods frequently rely on purely embedding-based methods. On the other hand, XC methods utilize classifier architectures to offer superior accuracies than embedding-only methods but mostly focus on text-based categorization tasks. MUFIN bridges this gap by reformulating multi-modal categorization as an XC problem with several millions of labels. This presents the twin challenges of developing multi-modal architectures that can offer embeddings sufficiently expressive to allow accurate categorization over millions of labels; and training and inference routines that scale logarithmically in the number of labels. MUFIN develops an architecture based on cross-modal attention and trains it in a modular fashion using pre-training and positive and negative mining. A novel product-to-product recommendation dataset MM-AmazonTitles-300K containing over 300K products was curated from publicly available amazon.com listings with each product endowed with a title and multiple images. On the MM-AmazonTitles-300K and Polyvore datasets, and a dataset with over 4 million labels curated from click logs of the Bing search engine, MUFIN offered at least 3% higher accuracy than leading text-based, image-based and multi-modal techniques.</i></p>
+        <p></p><pre xml:space="preserve" style="display: none;">@InProceedings{Mittal22,
+          author    = "Mittal, A. and Dahiya, K. and Malani, S. 
+                      and Ramaswamy, J. and Kuruvilla, S. 
+                      and Ajmera, J. and Chang, K. 
+                      and Agrawal, S. and Kar, P. and Varma, M.",
+          title     = " Multimodal Extreme Classification",
+          booktitle = "Proceedings of the IEEE Conference 
+                       on Computer Vision and Pattern Recognition",
+          month     = "June",
+          year      = "2022"
+        }        
+</pre>
+</div>
+</td>
+</tr></table>
+
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tbody><tr>
+     <td width="33%" valign="top" align="center"><a href="http://manikvarma.org/pubs/dahiya21b.pdf" target="_blank"><img src="./data/siamesexml.png" alt="siamesexml" width="100%" style="border-radius:15px"></a>
+     </td><td width="67%" valign="top">
+        <p><a href="http://manikvarma.org/pubs/dahiya21b.pdf" target="_blank" id="Dahiya21b">
         <heading>SiameseXML: Siamese Networks meet Extreme Classifiers with 100M Labels</heading></a><br>
         <strong> Kunal Dahiya</strong>, Ananye Agarwal, Deepak Saini, Gururaj K, Jian Jiao, Amit Singh, Sumeet Agarwal, Purushottam Kar, and Manik Varma<br>
         Internation conference on Machine Learning (<b>ICML</b>), 2021<br>
@@ -68,7 +100,7 @@
         <div class="paper" id="dahiya21b">
         <a href="javascript:toggleblock(&#39;dahiya21babs&#39;)">abstract</a> /
         <a shape="rect" href="javascript:togglebib(&#39;dahiya21b&#39;)" class="togglebib">bibtex</a> /
-        <a href="https://www.cse.iitd.ac.in/~kunal/siamesexml_main.pdf" target="_blank">pdf</a> /
+        <a href="http://manikvarma.org/pubs/dahiya21b.pdf" target="_blank">pdf</a> /
         <a href="https://github.com/Extreme-classification/siamesexml" target="_blank">code</a>
         <p align="justify"> <i id="dahiya21babs" style="display: none;">Deep extreme multi-label learning (XML) requires training deep architectures that can tag a data point with its most relevant subset of labels from an extremely large label set. XML applications such as ad and product recommendation involve labels rarely seen during training but which nevertheless hold the key to recommendations that delight users. Effective utilization of label metadata and high quality predictions for rare labels at the scale of millions of labels are thus key challenges in contemporary XML research. To address these, this paper develops the SiameseXML framework based on a novel probabilistic model that naturally motivates a modular approach melding Siamese architectures with high-capacity extreme classifiers, and a training pipeline that effortlessly scales to tasks with 100 million labels. SiameseXML offers predictions 2-13% more accurate than leading XML methods on public benchmark datasets, as well as in live A/B tests on the Bing search engine, it offers significant gains in click-through-rates, coverage, revenue and other online metrics over state-of-the-art techniques currently in production.</i></p>
         <p></p><pre xml:space="preserve" style="display: none;">@InProceedings{Dahiya21b,
