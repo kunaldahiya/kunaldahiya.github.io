@@ -28,11 +28,11 @@
        <td width="68%" valign="top" align="justify" id="Bio">
 
       <p>
-        I am a Research Scholar in the School of Information Technology at Indian Institute of Technology Delhi, where I work on extreme multi-label learning. I am working with <a href="http://manikvarma.org/"> Dr. Manik Varma</a> and <a href="https://web.iitd.ac.in/~sumeet/"> Dr. Sumeet Agarwal</a> on deep learning for extreme multi-label classification. I had previously worked with <a href="https://iith.ac.in/~ckm/"> Dr. C Krishna Mohan</a> on scalable visual computing applications as part of my Masters thesis.        
+        I am currently working as a Research Scientist at KnowDis AI. I recently completed my Ph.D. at Indian Institute of Technology Delhi (IIT Delhi), India, where I focused on solving cutting-edge problems in Extreme Multi-label Learning (XML) with tangible real-world applications. I worked with <a href="http://manikvarma.org/"> Dr. Manik Varma</a>, <a href="https://web.iitd.ac.in/~sumeet/"> Dr. Sumeet Agarwal</a>, and <a href="https://www.cse.iitk.ac.in/users/purushot/">Dr. Purushottam Kar</a> on deep learning for extreme multi-label classification. I had previously worked with <a href="https://iith.ac.in/~ckm/"> Dr. C Krishna Mohan</a> on scalable visual computing applications as part of my Masters thesis.        
       </p>
 
       <p>
-        Our recent work DeepXML not only provides a uniform framework to analyze and improve existing deep extreme classifiers but it also yielded a family of deep extreme classification algorithms such as Astec, DECAF, GalaXC, ECLARE, MUFIN, and SiameseXML. These algorithms have found applications in various real-world applications including query recommendation and ads where it is benefitting millions of users and small buisnesses.
+        Our recent work DeepXML not only provides a uniform framework to analyze and improve existing deep extreme classifiers but it also yielded a family of deep extreme classification algorithms such as Astec, DECAF, GalaXC, ECLARE, MUFIN, SiameseXML, NGAME, and DEXA. These algorithms have found applications in various real-world applications including query recommendation and ads where it is benefitting millions of users and small buisnesses.
       </p>
        </td>
     </tr>
@@ -42,6 +42,7 @@
     <tbody><tr><td id="News">
       <heading>News</heading>
        <ul>
+        <li> IRENE accepted at KDD 2024.</li>
         <li> DEXA accepted at KDD 2023.</li>
         <li> NGAME accepted at WSDM 2023.</li>
         <li> MUFIN accepted at CVPR 2022.</li>
@@ -57,6 +58,65 @@
   </tbody></table><table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
     <tbody><tr><td id="ConfPublications"> <heading>Publications</heading></td></tr>
   </tbody></table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+      <td width="33%" valign="top" align="center"><a href="http://manikvarma.org/pubs/yadav24.pdf" target="_blank"><img src="./data/irene.png" alt="irene" width="100%" style="border-radius:15px"></a>
+      </td><td width="67%" valign="top">
+          <p><a href="http://manikvarma.org/pubs/yadav24.pdf" target="_blank" id="Yadav24">
+          <heading>Extreme Meta-classification for Large-scale Zero-shot Retrieval</heading></a><br>
+          Sachin Yadav, Deepak Saini, Anirudh Buvanesh, Bhawna Paliwal, <strong> Kunal Dahiya</strong>, Siddharth Asokan, Yashoteja Prabhu, Jiao Jiao, Manik Varma
+          <br>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>), 2024<br>
+      </p>
+          <div class="paper" id="yadav24">
+          <a href="javascript:toggleblock(&#39;yadav24babs&#39;)">abstract</a> /
+          <a shape="rect" href="javascript:togglebib(&#39;yadav24&#39;)" class="togglebib">bibtex</a> /
+          <a href="http://manikvarma.org/pubs/yadav24.pdf" target="_blank">pdf</a> /
+          <a href="https://github.com/yadav-sachin/IRENE" target="_blank">code</a>
+          <p align="justify"> <i id="yadav24babs" style="display: none;">We develop accurate and efficient solutions for large-scale retrieval
+            tasks where novel (zero-shot) items can arrive continuously at a
+            rapid pace. Conventional Siamese-style approaches embed both
+            queries and items through a small encoder and retrieve the items
+            lying closest to the query. While this approach allows efficient 
+            addition and retrieval of novel items, the small encoder lacks sufficient
+            capacity for the necessary world knowledge in complex retrieval
+            tasks. The extreme classification approaches have addressed this
+            by learning a separate classifier for each item observed in the 
+            training set which significantly increases the representation capacity
+            of the model. Such classifiers outperform Siamese approaches on
+            observed items, but cannot be trained for novel items due to data
+            and latency constraints. To bridge these gaps, this paper develops:
+            (1) A new algorithmic framework, EMMETT, which efficiently
+            synthesizes classifiers on-the-fly for novel items, by relying on
+            the readily available classifiers for observed items; 
+            (2) A new algorithm, IRENE, which is a simple and effective instance of EMMETT
+            that is specifically suited for large-scale deployments, and 
+            (3) A new theoretical framework for analyzing the generalization 
+            performance in large-scale zero-shot retrieval which guides our algorithm
+            and training related design decisions. Comprehensive experiments
+            are conducted on a wide range of retrieval tasks which demonstrate
+            that IRENE improves the zero-shot retrieval accuracy by up to 15%
+            points in Recall@10 when added on top of leading encoders. 
+            Additionally, on an online A/B test in a large-scale ad retrieval task in
+            a major search engine, IRENE improved the ad click-through rate
+            by 4.2%. Lastly, we validate our design choices through extensive ablative experiments.</i></p>
+          <p></p><pre xml:space="preserve" style="display: none;">@InProceedings{Yadav24,
+            author      = "Yadav, S. and Saini, D. and Buvanesh, A. 
+                          and Paliwal, B. and Dahiya, K. and Asokan, 
+                          S. and Prabhu, Y. and Jiao, J. and Varma, M.",
+            title       = "Extreme Meta-classification for 
+                          Large-scale Zero-shot Retrieval",
+            booktitle = "Proceedings of the the ACM SIGKDD Conference 
+                         on Knowledge Discovery and Data Mining",
+            month       = "August",
+            year        = "2024",
+          }
+          
+    </pre>
+    </div>
+    </td>
+    </tr></table>
+
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     <tbody><tr>
@@ -205,7 +265,7 @@
         <a shape="rect" href="javascript:togglebib(&#39;dahiya21&#39;)" class="togglebib">bibtex</a> /
         <a href="http://manikvarma.org/pubs/dahiya21-main.pdf" target="_blank">pdf</a> /
         <a href="https://github.com/Extreme-classification/deepxml" target="_blank">code</a>
-        <p align="justify"> <i id="dahiya21abs" style="display: none;">Scalability and accuracy are well recognized challenges in deep extreme multi-label learning where the objective is to train architectures for automatically annotating a data point with the most relevant subset of labels from an extremely large label set. This paper develops the DeepXML framework that addresses these challenges by decomposing the deep extreme multi-label task into four simpler sub-tasks each of which can be trained accurately and efficiently. Choosing different components for the four sub-tasks allows DeepXML to generate a family of algorithms with varying trade-offs between accuracy and scalability. In particular, DeepXML yields the Astec algorithm that could be 2-12% more accurate and 5-30× faster to train than leading deep extreme classifiers on publically available short text datasets. Astec could also efficiently train on Bing short text datasets containing up to 62 million labels while making predictions for billions of users and data points per day on commodity hardware. This allowed Astec to be deployed on the Bing search engine for a number of short text applications ranging from matching user queries to advertiser bid phrases to showing personalized ads where it yielded significant gains in click-through-rates, coverage, revenue and other online metrics over state-of-the-art techniques currently in production.</i></p>
+        <p align="justify"> <i id="dahiya21abs" style="display: none;">Scalability and accuracy are well recognized challenges in deep extreme multi-label learning where the objective is to train architectures for automatically annotating a data point with the most relevant subset of labels from an extremely large label set. This paper develops the DeepXML framework that addresses these challenges by decomposing the deep extreme multi-label task into four simpler sub-tasks each of which can be trained accurately and efficiently. Choosing different components for the four sub-tasks allows DeepXML to generate a family of algorithms with varying trade-offs between accuracy and scalability. In particular, DeepXML yields the Astec algorithm that could be 2-12% more accurate and 5-30x faster to train than leading deep extreme classifiers on publically available short text datasets. Astec could also efficiently train on Bing short text datasets containing up to 62 million labels while making predictions for billions of users and data points per day on commodity hardware. This allowed Astec to be deployed on the Bing search engine for a number of short text applications ranging from matching user queries to advertiser bid phrases to showing personalized ads where it yielded significant gains in click-through-rates, coverage, revenue and other online metrics over state-of-the-art techniques currently in production.</i></p>
         <p></p><pre xml:space="preserve" style="display: none;">@InProceedings{Dahiya21,
     author = "Dahiya, K. and Saini, D. and Mittal, A. and 
               Shaw, A. and Dave, K. and Soni, A. and Jain,
@@ -237,7 +297,7 @@
       <a shape="rect" href="javascript:togglebib(&#39;mittal21&#39;)" class="togglebib">bibtex</a> /
       <a href="http://manikvarma.org/pubs/mittal21-main.pdf" target="_blank">pdf</a> /
       <a href="https://github.com/Extreme-classification/DECAF" target="_blank">code</a>
-      <p align="justify"> <i id="mittal21abs" style="display: none;">Extreme multi-label classification (XML) involves tagging a data point with its most relevant subset of labels from an extremely large label set, with several applications such as product-to-product recommendation with millions of products. Although leading XML algorithms scale to millions of labels, they largely ignore label metadata such as textual descriptions of the labels. On the other hand, classical techniques that can utilize label metadata via representation learning using deep networks struggle in extreme settings. This paper develops the DECAF algorithm that addresses these challenges by learning models enriched by label metadata that jointly learn model parameters and feature representations using deep networks and offer accurate classification at the scale of millions of labels. DECAF makes specific contributions to model architecture design, initialization, and training, enabling it to offer up to 2-6% more accurate prediction than leading extreme classifiers on publicly available benchmark product-to-product recommendation datasets, such as LF-AmazonTitles-1.3M. At the same time, DECAF was found to be up to 22× faster at inference than leading deep extreme classifiers, which makes it suitable for real-time applications that require predictions within a few milliseconds.</i></p>
+      <p align="justify"> <i id="mittal21abs" style="display: none;">Extreme multi-label classification (XML) involves tagging a data point with its most relevant subset of labels from an extremely large label set, with several applications such as product-to-product recommendation with millions of products. Although leading XML algorithms scale to millions of labels, they largely ignore label metadata such as textual descriptions of the labels. On the other hand, classical techniques that can utilize label metadata via representation learning using deep networks struggle in extreme settings. This paper develops the DECAF algorithm that addresses these challenges by learning models enriched by label metadata that jointly learn model parameters and feature representations using deep networks and offer accurate classification at the scale of millions of labels. DECAF makes specific contributions to model architecture design, initialization, and training, enabling it to offer up to 2-6% more accurate prediction than leading extreme classifiers on publicly available benchmark product-to-product recommendation datasets, such as LF-AmazonTitles-1.3M. At the same time, DECAF was found to be up to 22x faster at inference than leading deep extreme classifiers, which makes it suitable for real-time applications that require predictions within a few milliseconds.</i></p>
       <p></p><pre xml:space="preserve" style="display: none;">@InProceedings{Mittal21,
   author = "Mittal, A. and Dahiya, K. and Agrawal, S. 
           and Saini, D. and Agarwal, S. and Kar, P. and Varma, M.",
@@ -332,7 +392,7 @@
             <td>
               <heading>Others</heading>
               <ul>
-                <li> Reviewer for TPAMI.</li>
+                <li> Reviewer for ICLR, TPAMI, and ACML.</li>
                 <li> Best TA award for COL341 and COL100 at IIT Delhi.</li>
                 </ul>
             </td>
